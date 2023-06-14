@@ -1,6 +1,6 @@
 ---
-id: topic-file-2
-title: Topic File 2
+id: lab2
+title: Lab 2
 sidebar_position: 2
 description: TBD
 ---
