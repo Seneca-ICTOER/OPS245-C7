@@ -50,7 +50,7 @@ Most of the learning in this course occurs through the hands-on problem solving 
 3. **USB Flash Drive** (3.0 preferred)	**Minimum Capacity:** 16 GB
 4. **Lab Logbook** (download & print Both sides per lab permitted)
 
-      - [Download Doc](https://wiki.cdot.senecacollege.ca/w/imgs/OPS245-Logbook-Online.doc)
+      - [Download Doc](/files/OPS245-Logbook-Online.doc)
       - **NOTE: If you've taken this class in a previous semester, you MAY NOT bring that version of the lab logbook to any testing.**
 
 5. **Dos and Don'ts** (**PLEASE READ**)
