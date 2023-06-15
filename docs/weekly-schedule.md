@@ -34,13 +34,13 @@ description: Weekly Schedule Page for OPS245
 | - Installing and Using Virtualization Software | - [Installing Virtual Machines](/slides/w3-l1.pptx) |  |
 | - Installing Guest VMs | - [Python Scripting (part 2)](/slides/w3-l2.pptx) |  |
 |  | **Script Samples:** | |
-|  | [menu.py](https://www.dropbox.com/s/neahqj4bsj7lgro/menu.py?dl=1) | |
-|  | [if1.py](https://www.dropbox.com/s/b04u0e1snvfcrqs/if1.py?dl=1) | |
-|  | [twoif.py](https://www.dropbox.com/s/j5omwggit05vi5g/twoif.py?dl=1) | |
-|  | [if2.py](https://www.dropbox.com/s/2mof7xszd7kp9ma/if2.py?dl=1) | |
-|  | [if3.py](https://www.dropbox.com/s/ywo3b797okb3tf8/if3.py?dl=1) | |
-|  | [if4.py](https://www.dropbox.com/s/mral0c2pnxpqsgu/if4.py?dl=1) | |
-|  | [if5.py](https://www.dropbox.com/s/9v857kr93r82pbh/if5.py?dl=1) | |
+|  | [menu.py](/files/menu.py) | |
+|  | [if1.py](/files/if1.py) | |
+|  | [twoif.py](/files/twoif.py) | |
+|  | [if2.py](/files/if2.py) | |
+|  | [if3.py](/files/if3.py) | |
+|  | [if4.py](/files/if4.py) | |
+|  | [if5.py](/files/if5.py) | |
 
 ## Week 4
 
@@ -50,9 +50,9 @@ description: Weekly Schedule Page for OPS245
 | - Manipulating Virtual Machines | - [Managing Virtual Machines](/slides/w4-l1.pptx) |  |
 | - Backing-up Virtual Machines | - [Python Scripting (part 3)](/slides/w4-l2.pptx) |  |
 | - Manipulating Virtual Machines with Shell Scripts | **Script Samples:** | |
-| - Decision Making in Python Scripts | [userprint.py](https://www.dropbox.com/s/4nraz2sp31inpg7/userprint.py?dl=1) | |
-|  | [countup.py](https://www.dropbox.com/s/ziwugivlpwd0prg/countup.py?dl=1) | |
-|  | [countup2.py](https://www.dropbox.com/s/mv2ke7a8hyfrkqj/countup2.py?dl=1) | |
+| - Decision Making in Python Scripts | [userprint.py](/files/userprint.py) | |
+|  | [countup.py](/files/countup.py) | |
+|  | [countup2.py](/files/countup2.py) | |
 
 ## Week 5
 
