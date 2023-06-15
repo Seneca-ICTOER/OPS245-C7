@@ -34,7 +34,7 @@ It is ESSENTIAL to have a **Solid State Drive (SSD) with a minimum storage capac
 ### Minimum Required Materials
 
 1. **Solid State Drive** Minimum Size: 250GB
-2. **Lab Logbook** [(Click Here to Download)](https://wiki.cdot.senecacollege.ca/w/imgs/OPS245-Logbook-Online.doc)
+2. **Lab Logbook** [(Click Here to Download)](/files/OPS245-Logbook-Online.doc)
 
 ### Linux Command Reference
 
