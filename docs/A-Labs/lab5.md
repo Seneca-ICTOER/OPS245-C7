@@ -99,7 +99,7 @@ This section focuses on how to automatically run shell scripts without the Linux
 
 The **cron** daemon is used to refer to these shell scripts (or other commands or programs) and to run them on a pre-determined basis. The term **cron** comes from the old word **chronograph** meaning a special type of watch (actually a _stop-watch_) to help monitor and schedule routine tasks.
 
-**Please review these Bash Shell Scripting Tips (ADD LINKS) before proceeding with the following steps**
+**Please review these [Bash Shell Scripting Tips](/C-ExtraResources/bash-shell-scripting-tips.md) before proceeding with the following steps**
 
 **Perform the following steps:**
 
