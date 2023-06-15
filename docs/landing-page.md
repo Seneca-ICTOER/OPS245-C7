@@ -71,7 +71,7 @@ Most of the learning in this course occurs through the hands-on problem solving 
 
 ![Jason Carman](/img/JasonCarman.jpg)
 
-**Jason Carman** \| Section **NCC** (July & August Only), **NEE** \| [jason.carman@senecacollege.ca](jason.carman@senecacollege.ca)
+**Jason Carman** \| Section **NCC** (July & August Only), **NEE** \| [jason.carman@senecacollege.ca](mailto:jason.carman@senecacollege.ca)
 
 ![Ataur Rahman](/img/Ataur-RTN.jpg)
 
