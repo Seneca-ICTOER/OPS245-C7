@@ -382,7 +382,7 @@ It is very common for System Administrators to keep records regarding their inst
 
 Therefore, it makes sense to also have a record of the installed computer software as well. This can contain information regarding the Linux operating system, installed software, and network connectivity information.
 
-**Please review the Bash Shell Reference Guide (ADD LINK HERE) to help with the rest of Investigation 3**
+**Please review the [Bash Shell Reference Guide](/C-ExtraResources/bash-shell-reference-guide.md) to help with the rest of Investigation 3**
 
 **Perform the Following Steps:**
 
