@@ -1,3 +1,10 @@
+---
+id: bash-shell-scripting-tips
+title: Bash Shell Scripting Tips
+sidebar_position: 6
+description: Bash Shell Scripting Tips
+---
+
 # Bash Shell Scripting Tips
 
 ## For Lab 5 Investigation 1 Part 2
