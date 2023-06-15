@@ -462,7 +462,7 @@ If you shut down your host system while virtual machines are running, they will 
 
 You will continue our use of the Bash Shell by examining commands will allow the Linux sysadmin to gather information about and manage their Virtual Machines.
 
-**Please check out these Bash Shell Tips (ADD LINK) first before continuing with the following steps**
+**Please check out these [Bash Shell Tips](/C-ExtraResources/bash-shell-tips.md) first before continuing with the following steps**
 
 **Perform the following steps:**
 
@@ -502,7 +502,7 @@ If the Virtual machine fails to shutdown from the `virsh shutdown` command, then
 
 This week you have added some significant capabilities to your python scripting. The ability to run loops and make decisions makes your scripts much more powerful. In this investigation you will write a python script that backs up the centos1, centos2, and centos3 VMs, or lets the user specify which VMs they want backed up.
 
-**Please take a look at these Python Scripting Tips (ADD LINK) before continuing with the steps below**
+**Please take a look at these [Python Scripting Tips](/C-ExtraResources/python-scripting-tips.md) before continuing with the steps below**
 
   1. In your **bin** directory, create the file **backupVM.py**, and populate with our standard beginning
 
