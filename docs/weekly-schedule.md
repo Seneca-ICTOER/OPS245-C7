@@ -102,24 +102,24 @@ description: Weekly Schedule Page for OPS245
 | Learning Objectives and Tasks |	References |	Evaluation |
 | :--- | :--- | :--- |
 | **Using Logical Volume Manager (LVM):** | **Lecture Notes:** | [Lab 5: Using LVM - Investigation 2](/A-Labs/lab5.md#investigation-2-managing-hard-disk-space-using-lvm) |
-| - Creating Shell Scripts to Flag Low Disk Space | - [Introduction to LVM](https://www.dropbox.com/s/u0cqkaptjurkp08/w9-l1.pptx?dl=1) |  |
-|  | - [Advanced uses of the `awk` command](https://www.dropbox.com/s/lnw8gzln1b2yfw0/w9-l2.pptx?dl=1) |  |
+| - Creating Shell Scripts to Flag Low Disk Space | - [Introduction to LVM](/slides/w9-l1.pptx) |  |
+|  | - [Advanced uses of the `awk` command](/slides/w9-l2.pptx) |  |
 |  | - Demonstration of Growing _/home_ partition using LVM: [YouTube](https://youtu.be/4fGQmw9RInYg) |  |
 |  | **Script Samples:** | |
-|  | [cars](https://www.dropbox.com/s/p3bxgyhka592sff/cars.txt?dl=1) |  |
-|  | [users2.txt](https://www.dropbox.com/s/vdedytlcc2wlocu/users2.txt?dl=1) |  |
-|  | [awkFile1](https://www.dropbox.com/s/oc1ae5s3uolp60n/awkFile1?dl=1) |  |
-|  | [awkFile2](https://www.dropbox.com/s/izv1l12bqxp6hbn/awkFile2?dl=1) |  |
-|  | [awkFile3](https://www.dropbox.com/s/i15jbfrw0t1afw5/awkFile3?dl=1) |  |
-|  | [awkFile4](https://www.dropbox.com/s/d2apxu1nc6p50q9/awkFile4?dl=1) |  |
+|  | [cars](/files/cars.txt) |  |
+|  | [users2.txt](/files/users2.txt) |  |
+|  | [awkFile1](/files/awkFile1) |  |
+|  | [awkFile2](/files/awkFile2) |  |
+|  | [awkFile3](/files/awkFile3) |  |
+|  | [awkFile4](/files/awkFile4) |  |
 
 ## Week 10
 
 | Learning Objectives and Tasks |	References |	Evaluation |
 | :--- | :--- | :--- |
 | **Configuring a Network Using Virtual Machines** | **Lecture Notes:** | [Lab 6: Virtual Networks](/A-Labs/lab6.md) |
-| - Static Network Configuration | - [Creating a Virtual Network](https://www.dropbox.com/s/degjqz79cahb8em/w10-l1.pptx?dl=1) |  |
-| - Network Configuration with a DHCP client | - [Python Scripting (part 7)](https://www.dropbox.com/s/bjdc97c430ypvjk/w10-l2.pptx?dl=1) |  |
+| - Static Network Configuration | - [Creating a Virtual Network](/slides/w10-l1.pptx) |  |
+| - Network Configuration with a DHCP client | - [Python Scripting (part 7)](/slides/w10-l2.pptx) |  |
 | - Basic TCP/IP network commands: `ping`, `ip`, `ss` |  | |
 | - Using Python Scripts to Access Files |  | |
 
@@ -128,15 +128,15 @@ description: Weekly Schedule Page for OPS245
 | Learning Objectives and Tasks |	References |	Evaluation |
 | :--- | :--- | :--- |
 | **Setup and Configure Secure Shell Services** | **Lecture Notes:** | [Lab 7: Setup and Configure SSH](/A-Labs/lab7.md) |
-| - Network Services | - [Securing Network via SSH](https://www.dropbox.com/s/q61rurwnpmavk0z/w11-l1.pptx?dl=1) |  |
-| - SSH | - [Configuring Firewalls (iptables)](https://www.dropbox.com/s/nmjeh2uciq2d7sp/W11-l2.pptx?dl=1) |  |
+| - Network Services | - [Securing Network via SSH](/slides/w11-l1.pptx) |  |
+| - SSH | - [Configuring Firewalls (iptables)](/slides/W11-l2.pptx) |  |
 
 ## Week 12
 
 | Learning Objectives and Tasks |	References |	Evaluation |
 | :--- | :--- | :--- |
 | **Setting Up, Using and Maintaining a DHCP Server** | **Lecture Notes:** | [Lab 8: Setup and Configure a DHCP Server](/A-Labs/lab8.md) |
-| - DHCP Server | - [Setting up a DHCP Server](https://www.dropbox.com/s/taikt9hk9ffjtyg/w12-l1.pptx?dl=1) |  |
+| - DHCP Server | - [Setting up a DHCP Server](/slides/w12-l1.pptx) |  |
 
 ## Week 13
 
