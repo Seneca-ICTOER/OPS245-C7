@@ -221,6 +221,7 @@ Network service problems may not be entirely related to a "broken" network conne
 **Common Network Troubleshooting Tools**
 
 | **Purpose** |	**Command(s)** |
+| --- | --- |
 | Network Connectivity |	`ping`, `arp`, `ip` |
 | Network Service Status |	`ss` |
 
