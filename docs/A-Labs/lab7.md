@@ -366,7 +366,7 @@ sudo iptables -L
 **Listing iptables Rules:**
 
 | **iptables -L** |	List all iptables rules (eg. INPUT, OUTPUT. FORWARD, and any customized chains (if any) |
-| :--- | :--- |
+| --- | --- |
 | **iptables -L -v** |	Verbosely List all iptables rules including information such as total size of packets affected by rules |
 | **iptables -L CHAIN-NAME** |	List all iptables rules for that particular chain-name for less clutter (eg. INPUT or OUTPUT, etc) |
 
