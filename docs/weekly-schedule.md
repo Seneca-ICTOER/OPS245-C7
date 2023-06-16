@@ -34,13 +34,7 @@ description: Weekly Schedule Page for OPS245
 | - Installing and Using Virtualization Software | - [Installing Virtual Machines](/slides/w3-l1.pptx) |  |
 | - Installing Guest VMs | - [Python Scripting (part 2)](/slides/w3-l2.pptx) |  |
 |  | **Script Samples:** | |
-|  | [menu.py](/files/menu.py) | |
-|  | [if1.py](/files/if1.py) | |
-|  | [twoif.py](/files/twoif.py) | |
-|  | [if2.py](/files/if2.py) | |
-|  | [if3.py](/files/if3.py) | |
-|  | [if4.py](/files/if4.py) | |
-|  | [if5.py](/files/if5.py) | |
+|  | [menu.py](/files/menu.py), [if1.py](/files/if1.py), [twoif.py](/files/twoif.py), [if2.py](/files/if2.py), [if3.py](/files/if3.py), [if4.py](/files/if4.py), [if5.py](/files/if5.py) | |
 
 ## Week 4
 
@@ -50,9 +44,7 @@ description: Weekly Schedule Page for OPS245
 | - Manipulating Virtual Machines | - [Managing Virtual Machines](/slides/w4-l1.pptx) |  |
 | - Backing-up Virtual Machines | - [Python Scripting (part 3)](/slides/w4-l2.pptx) |  |
 | - Manipulating Virtual Machines with Shell Scripts | **Script Samples:** | |
-| - Decision Making in Python Scripts | [userprint.py](/files/userprint.py) | |
-|  | [countup.py](/files/countup.py) | |
-|  | [countup2.py](/files/countup2.py) | |
+| - Decision Making in Python Scripts | [userprint.py](/files/userprint.py), [countup.py](/files/countup.py), [countup2.py](/files/countup2.py) | |
 
 ## Week 5
 
@@ -106,12 +98,7 @@ description: Weekly Schedule Page for OPS245
 |  | - [Advanced uses of the `awk` command](/slides/w9-l2.pptx) |  |
 |  | - Demonstration of Growing _/home_ partition using LVM: [YouTube](https://youtu.be/4fGQmw9RInYg) |  |
 |  | **Script Samples:** | |
-|  | [cars](/files/cars.txt) |  |
-|  | [users2.txt](/files/users2.txt) |  |
-|  | [awkFile1](/files/awkFile1) |  |
-|  | [awkFile2](/files/awkFile2) |  |
-|  | [awkFile3](/files/awkFile3) |  |
-|  | [awkFile4](/files/awkFile4) |  |
+|  | [cars](/files/cars.txt), [users2.txt](/files/users2.txt), [awkFile1](/files/awkFile1), [awkFile2](/files/awkFile2), [awkFile3](/files/awkFile3), [awkFile4](/files/awkFile4) |  |
 
 ## Week 10
 
