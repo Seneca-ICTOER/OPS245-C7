@@ -10,19 +10,14 @@ description: Landing Home Page for OPS245
 
 ## Quick Links
 
-| [Weekly Schedule](./weekly-schedule.md) | [Course Outline](https://apps.senecacollege.ca/ssos/findOutline.do?schoolCode=SICT&termCode=20222&subjectCode=OPS245) |
-| --- | --- |
-
-## Assignments
-
-| [Assignment 1](/B-Assignments/assignment1.md) | [Assignment 2](/B-Assignments/assignment2.md) |
-| --- | --- |
+| [Weekly Schedule](./weekly-schedule.md) | [Course Outline](https://apps.senecacollege.ca/ssos/findOutline.do?schoolCode=SICT&termCode=20222&subjectCode=OPS245) | [Assignment 1](/B-Assignments/assignment1.md) | [Assignment 2](/B-Assignments/assignment2.md) |
+| --- | --- | --- | --- |
 
 ## What This Course is About
 
 This course is the second in a series of courses about Linux technologies
 
-  - ULI101 taught you to be a Linux user. In OPS245, you will move from being a Linux user to being a Linux system administrator.
+  - ULI101 taught you to be a Linux user. **In OPS245, you will move from being a Linux user to being a Linux system administrator.**
   - As a system administrator, you will be responsible for installing, configuring, adjusting, maintaining, and troubleshooting the operation of computer systems. This is a lot of responsibility, and with that responsibility comes power. You will be able to change anything on the system, and you will also have the ability to damage or destroy the system.
   - In addition to manually configuring machines, you will learn to use bash and Python to automate some configuration tasks. Although this course will not cover the full features of either language, it will serve as an introduction to scripting and automation to make you a more capable and efficient system administrator.
   - In this course you use an external SSD drive (USB 3) with the lab computers to set up a Linux system. You will also set up at least four additional Linux systems using "Virtual Machines", and therefore gain experience with different types of system configurations as well as setting up networking between systems.
@@ -78,11 +73,6 @@ Most of the learning in this course occurs through the hands-on problem solving 
 **Ataur Rahman** \| Section **NFF** \| [ataur.rahman@senecacollege.ca](mailto:ataur.rahman@senecacollege.ca)
 
 **Evaluation:**
-
-- Labs and Quizzes - 25%
-- Assignments (minimum of 2) - 30%
-- Tests (minimum of 1) - 20%
-- Final Assessment - 25%
 
 | **Evaluation** | **Marks** |
 | --- | --- |
