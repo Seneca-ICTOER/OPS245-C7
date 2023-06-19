@@ -74,7 +74,7 @@ You can do these exercises in any order, and change them in any way you like.
   - Create a bash script to display the contents of /etc/sysconfig/network-scripts/ifcfg-ens33
 
        - Pipe the output to cat
-       + Pipe that output to cat. See if you understand why that doesn't seem to do anything
+         + Pipe that output to cat. See if you understand why that doesn't seem to do anything
 
   - Create a bash script which will use cat and grep to find the line with BOOTPROTO in /etc/sysconfig/network-scripts/ifcfg-ens33
 
