@@ -304,8 +304,8 @@ To do so, start the install process as normal for an installation from an iso fi
   - **Memory**: 2048MB (**IMPORTANT** Do not use less than 2048MB during installation.)
   - **Disk space**: 15GB
   - **CPUs**: 2
-**
-Include ks= in the URL options field!**
+
+**Include ks= in the URL options field!**
 
 When using a kickstart file, make sure you include the ***ks=*** portion of the link. If done correctly, you should not be able to select partitions or any other settings.
 
