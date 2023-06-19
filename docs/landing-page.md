@@ -58,19 +58,19 @@ Most of the learning in this course occurs through the hands-on problem solving 
 
 ![Peter Callaghan](/img/Petercallaghan.jpg)
 
-**Brian Gray** \| Section **N??** \| [brian.gray@senecacollege.ca](mailto:brian.gray@senecacollege.ca)
+**[Brian Gray](mailto:brian.gray@senecacollege.ca)** \| Section **N??**
 
 ![Andrew](/img/Andrew.jpg)
 
-**Andrew Smith** \| Section **N??** \| [andrew.smith@senecacollege.ca](mailto:andrew.smith@senecacollege.ca)
+**[Andrew Smith](mailto:andrew.smith@senecacollege.ca)** \| Section **N??**
 
 ![Jason Carman](/img/JasonCarman.jpg)
 
-**Jason Carman** \| Section **NCC** (July & August Only), **NEE** \| [jason.carman@senecacollege.ca](mailto:jason.carman@senecacollege.ca)
+**[Jason Carman](mailto:jason.carman@senecacollege.ca)** \| Section **NCC** (July & August Only), **NEE**
 
 ![Ataur Rahman](/img/Ataur-RTN.jpg)
 
-**Ataur Rahman** \| Section **NFF** \| [ataur.rahman@senecacollege.ca](mailto:ataur.rahman@senecacollege.ca)
+**[Ataur Rahman](mailto:ataur.rahman@senecacollege.ca)** \| Section **NFF**
 
 **Evaluation:**
 
