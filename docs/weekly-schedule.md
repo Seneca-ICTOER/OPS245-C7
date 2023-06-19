@@ -82,7 +82,7 @@ description: Weekly Schedule Page for OPS245
 
 | Learning Objectives and Tasks |	References |	Evaluation |
 | :--- | :--- | :--- |
-| **Monitoring Disk Space, Intro to LVM** | **Lecture Notes:** | [Lab 5: Monitoring Disk Space - Investigation 1](/A-Labs/lab5.md#investigation-1-monitoring-hard-disk-space) |
+| **Monitoring Disk Space, Intro to LVM** | **Lecture Notes:** | [Lab 5: Monitoring Disk Space - Investigation 1](/A-Labs/lab5.md) |
 | - Monitoring Hard Disk Space | - [Monitoring Disk Space, `crontab`](/slides/w8-l1.pptx) |  |
 | - LVM - Definition | - [Python Scripting (part 6)](/slides/w8-l2.pptx) |  |
 | - Using LVM |  | |
