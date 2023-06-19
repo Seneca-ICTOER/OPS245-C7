@@ -147,7 +147,7 @@ sudo chage -E 2024-12-31 ops245_1
   23. Issue the following command: 
 
 ```bash
-sudo usermod -c "New Name" ops245_2.
+sudo usermod -c "New Name" ops245_2
 ```
 
   24. View ops245_2's account information in the **/etc/passwd** file. What do you notice is different?
