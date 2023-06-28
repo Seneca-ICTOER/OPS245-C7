@@ -7,7 +7,7 @@ description: TBD
 
 # Lab 1: Installing CentOS 7 with VMWare Workstation
 
-## Lab Preperation
+## Lab Preparation
 
 ### Purpose of Lab 1
 
