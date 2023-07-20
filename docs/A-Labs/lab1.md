@@ -120,7 +120,7 @@ Before you can install your CentOS Full Install DVD onto your Virtual Machine, y
 
   11. Click on the item labelled **Create a New Virtual Machine.**
 
-         - NOTE: We will just be creating a "shell" for the VM to contain our CentOS 7 Linux operating system. This will allow us to configure the VM properly so it will boot-up properly in our Seneca labs.
+         - **NOTE**: We will just be creating a "shell" for the VM to contain our CentOS 7 Linux operating system. This will allow us to configure the VM properly so it will boot-up properly in our Seneca labs.
 
   12. Select the **Custom (advanced)** for the Virtual Machine Configuration setting and click **Next**.
   13. Click **Next** at the next screen to proceed.
@@ -238,13 +238,13 @@ In order to simplify running the lab checking scripts in future labs, using the 
   5. Click the **Reboot** button. Your DVD will briefly open in the DVD drive bay. Make certain to remove this installation DVD so that CentOS will boot from your hard drive.
   6. After the system reboots, a boot menu should briefly appear, then prompt the user to accept the License Information (this is only a one-time occurrence). In order to accept the license agreement, Click on **License Not Accepted** and graphically accept the license and then click **FINISH CONFIGURATION** to finish the installation process.
 
-  - **NOTE**: If you have an older version of CentOS 7, you must perform the alternative steps:
-  - Issue the following keystrokes:
+      - **NOTE**: If you have an older version of CentOS 7, you must perform the alternative steps:
+      - Issue the following keystrokes:
 
-       1. **1** followed by ENTER (to select the license agreement prompt
-       2. **2** followed by ENTER (to accept the license agreement)
-       3. **c** followed by ENTER (to save the selection)
-       4. **c** followed by ENTER (a second time to continue booting into the system)
+          1. **1** followed by ENTER (to select the license agreement prompt
+          2. **2** followed by ENTER (to accept the license agreement)
+          3. **c** followed by ENTER (to save the selection)
+          4. **c** followed by ENTER (a second time to continue booting into the system)
 
   7. The system should then graphically prompt the user to login with their regular user account. Click on your **regular user account name** and **enter your regular user password**.
   8. The last phase of the installation process should now run:
@@ -255,11 +255,11 @@ In order to simplify running the lab checking scripts in future labs, using the 
 
   9. Open a web-browser and check to see if you can connect to the Internet.
 
-Answer Investigation 1 observations (all parts and questions) in your lab log book.
+**Answer Investigation 1 observations (all parts and questions) in your lab log book.**
 
 ## Investigation 2: Common Post-Installation Tasks
 
-**Managing your Virtual Machine**
+### Managing your Virtual Machine
 
 In future labs, you will have to run your VMware Workstation application to boot-up your CentOS 7 host VM. Usually, you are NOT required to use this menu (unless you need to "force-off" the c7host7 machine, but should only be performed if you cannot normally shut-down the c7host VM from the OS.
 
@@ -395,7 +395,7 @@ Therefore, it makes sense to also have a record of the installed computer softwa
 | **Command(s)** | **Purpose** |
 | --- | --- |
 | `uname -rv`, `hostname`, `ps -ef` | Basic Linux OS information such as **kernel** version, **host-name** of Linux server, and all **processes** that are running on the system after installation. |
-| `rpm -q -a \| wc -l`, `rpm -q -a -l \| wc -l`, `rpm -q -l gedit \| wc -l` | Obtain number of installed packages in the rpm database. Option **-q** is to "query" information, option **-a** means for all installed packages, option **-l** means all files installed as opposed to just the application. |
+| **rpm -q -a \| wc -l**, **rpm -q -a -l \| wc -l**, **rpm -q -l gedit \| wc -l** | Obtain number of installed packages in the rpm database. Option **-q** is to "query" information, option **-a** means for all installed packages, option **-l** means all files installed as opposed to just the application. |
 | `ip address show`, `ip route show`, `nslookup` (at prompt, enter command: **server**) | Obtain network connectivity confirmation including: **IP ADDRESS, Netmask, routing** (default gateway), and the default **Domain Name Server**. |
 
 You may have learned about creating and running Bash Shell Scripts in your ULI101 course. Shell scripts help Linux users and system administrators to automate repetitive tasks to become more efficient and to help them save time. In order to avoid confusion with syntax, you will not be writing bash scripts in this course. You will however still run bash commands to perform various tasks, e.g. to generate information reports for your newly-installed Linux host machine.
