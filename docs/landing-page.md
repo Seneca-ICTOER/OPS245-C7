@@ -17,7 +17,7 @@ description: Landing Home Page for OPS245
 
 This course is the second in a series of courses about Linux technologies
 
-  - ULI101 taught you to be a Linux user. **In OPS245, you will move from being a Linux user to being a Linux system administrator.**
+  - ULI101 taught you to be a Linux _user_. **In OPS245, you will move from being a Linux _user_ to being a Linux system _administrator_.**
   - As a system administrator, you will be responsible for installing, configuring, adjusting, maintaining, and troubleshooting the operation of computer systems. This is a lot of responsibility, and with that responsibility comes power. You will be able to change anything on the system, and you will also have the ability to damage or destroy the system.
   - In addition to manually configuring machines, you will learn to use bash and Python to automate some configuration tasks. Although this course will not cover the full features of either language, it will serve as an introduction to scripting and automation to make you a more capable and efficient system administrator.
   - In this course you use an external SSD drive (USB 3) with the lab computers to set up a Linux system. You will also set up at least four additional Linux systems using "Virtual Machines", and therefore gain experience with different types of system configurations as well as setting up networking between systems.
@@ -30,7 +30,7 @@ Most of the learning in this course occurs through the hands-on problem solving 
 **Requirements for Success:**
 
   - It is very important to stay up-to-date with the coursework, and to practice until you have confidently mastered each task.
-  - All of the software used in this course is open source software, so you are free to use, modify, and redistribute it. This means that you can install it as many times as you want on as many different computers as you would like. It also means that you can tinker with it -- you can take it apart, see how it works, and put it back together in the same or a different way, limited only by your time and ambition. You are encouraged to experiment and question liberally.
+  - All of the software used in this course is _open source_ software, so you are free to use, modify, and redistribute it. This means that you can install it as many times as you want on as many different computers as you would like. It also means that you can tinker with it -- you can take it apart, see how it works, and put it back together in the same or a different way, limited only by your time and ambition. You are encouraged to experiment and question liberally.
   - The notes that you make during the labs and assignments are your reference material for the quizzes, tests, and assignments. Take really good notes, and if you have questions, experiment and consult with your professor.
   - Carefully read ALL lab instructions and check your work regularly. The labs have been designed with backup safeguards to prevent the student from losing their work. On the other hand, students may lose their work if they fail to follow lab instructions or accidentally forget their removable hard disks in the workstation's hard disk bay drive!
 
