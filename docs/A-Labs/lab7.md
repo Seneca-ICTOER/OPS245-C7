@@ -365,8 +365,9 @@ sudo iptables -L
 
 **Listing iptables Rules:**
 
-| **iptables -L** |	List all iptables rules (eg. INPUT, OUTPUT. FORWARD, and any customized chains (if any) |
+| iptables Command | Rules |
 | --- | --- |
+| **iptables -L** |	List all iptables rules (eg. INPUT, OUTPUT. FORWARD, and any customized chains (if any) |
 | **iptables -L -v** |	Verbosely List all iptables rules including information such as total size of packets affected by rules |
 | **iptables -L CHAIN-NAME** |	List all iptables rules for that particular chain-name for less clutter (eg. INPUT or OUTPUT, etc) |
 
@@ -392,8 +393,9 @@ iptables -L -v
 
 **Clearing (Flushing) iptables Rules:**
 
+| iptables Command | Result |
+| --- | --- |
 | **iptables -F** |	Clears the rules for ALL of the chains |
-| :--- | :--- |
 | **iptables -F CHAIN-NAME** |	Clears the rules for only the specified CHAIN-NAME (eg. INPUT or OUTPUT) |
 
   10. Issue the following command to reset the iptables rules for the INPUT chain:
@@ -425,8 +427,9 @@ An example would be to set a default policy for incoming network traffic (INPUT 
 
 **Policy Setting Examples:**
 
+| iptables Command | Result |
+| --- | --- |
 | **iptables -P INPUT DROP** |	Drops all incoming packets regardless of protocol (eg. tcp, udp, icmp), port numbers (eg. 22, 80) or source or destination IP Addresses. Setting a default rule to DROP all incoming traffic would make it easier to specify a few exceptions. |
-| :--- | :--- |
 | **iptables -P INPUT ACCEPT** |	Accepts all incoming packets regardless of protocol (eg. tcp, udp, icmp), port numbers (eg. 22, 80) or source or destination IP Addresses. It would seem that setting a default rule to ACCEPT all incoming traffic would require A LOT of exceptions to help "lock-down" the server for protection! The better practice is to use DROP as the default action, and only ACCEPT the traffic you actually want. |
 
 **Perform the following steps:**
@@ -441,13 +444,13 @@ iptables -P INPUT DROP
   3. Issue the **iptables -L** command. Can you see the policy to DROP all incoming connections?
   4. Although you have set a default policy to DROP all incoming connections, there is a problem: now, you cannot browse the Internet. You can confirm that by opening a SEPARATE web-browser and perform a Net-search.
 
-   - In order to fix that problem, you can make an exception to allow incoming web-based traffic (via port 80). Those iptables commands to create exceptions are more complex since you need to determine:
+      - In order to fix that problem, you can make an exception to allow incoming web-based traffic (via port 80). Those iptables commands to create exceptions are more complex since you need to determine:
 
-        - **Where each rules appears in the chain**? (order can be important)
-        - **Which protocol(s)** are affected (eg. tcp, udp, icmp)
-        - **What source or destination IP Addresses** are affected?
-        - **What port numbers** are affected?
-        - **What action to take** if all of the above conditions are met? (eg. ACCEPT, REJECT, DROP, or LOG)
+           - **Where each rules appears in the chain**? (order can be important)
+           - **Which protocol(s)** are affected (eg. tcp, udp, icmp)
+           - **What source or destination IP Addresses** are affected?
+           - **What port numbers** are affected?
+           - **What action to take** if all of the above conditions are met? (eg. ACCEPT, REJECT, DROP, or LOG)
 
 **iptables Command Structure (for setting exceptions):**
 
@@ -551,11 +554,11 @@ wget https://raw.githubusercontent.com/OPS245/labs/main/lab7-check.bash
   5. Run the shell script and if there are any warnings, make fixes and re-run shell script until you receive "congratulations" message.
   6. Arrange proof of the following on the screen:
 
-- [x] centos2 VM:
+- [x] **centos2** VM:
 
     + have logged into centos3 VM using **public key authentication** (with a pass-phrase)
 
-- [x] c7host Machine:
+- [x] **c7host** Machine:
 
     + have tunneled Xwindows application from **centos1** via ssh
     + Run the **lab7-check.bash** script in front of your instructor (must have all  `OK`  messages)
