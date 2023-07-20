@@ -255,12 +255,12 @@ Write a script called **netconfig.py** that will prompt the user for the followi
   3. Whether the interface should automatically turn on when the machine boots.
   4. Whether the interface should get a static or DHCP address
 
-  - Note: Only prompt the user for the following values if they chose a static address.
+      - Note: Only prompt the user for the following values if they chose a static address.
 
-       + The static ip address
-       + The network prefix
-       + The default gateway
-       + The primary DNS server
+          + The static ip address
+          + The network prefix
+          + The default gateway
+          + The primary DNS server
 
 Note that your script should make use of loops and try-except statements to make sure the user provided semi-reasonable data. You are not expected to create the regular expressions necessary to confirm the format of the IP address, but should be able handle simpler issues like forcing the user to give the interface a name (since you will need it for the filename), determining if it will start automatically, and the address type.
 
