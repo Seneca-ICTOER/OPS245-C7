@@ -69,8 +69,8 @@ We will now install the KVM package in order to create our remaining "nested" VM
 
 **Perform the following steps:**
 
-  1. Log into your c7host machine.
-  2. perform a software update on your c7host VM by issuing the following command: 
+  1. Log into your **c7host** machine.
+  2. perform a software update on your **c7host** VM by issuing the following command: 
 
 ```bash
 sudo yum update
@@ -453,8 +453,8 @@ sudo virsh define centos4.xml
 
 If you shut down your host system while virtual machines are running, they will be suspended, and will resume the next time you boot your host system. Note that it is better to shut down the VMs prior to shutting down the host
 
-  12. For the remainder of these labs, it is assumed that you will backup **both** the images and XML configuration files for **all** Virtual machines, when asked to backup your virtual machines. It is also highly recommended to backup these files to an external storage device (eg. USB key) in case the host machine gets "wiped" and you need to rebuild your HOST machine and then restore your Virtual Machines...
-  13. Answer this question in your log book:
+  11. For the remainder of these labs, it is assumed that you will backup **both** the images and XML configuration files for **all** Virtual machines, when asked to backup your virtual machines. It is also highly recommended to backup these files to an external storage device (eg. USB key) in case the host machine gets "wiped" and you need to rebuild your HOST machine and then restore your Virtual Machines...
+  12. Answer this question in your log book:
 
          - In order to fully back up a virtual machine, what information should be saved in addition to the virtual machine image?
 
