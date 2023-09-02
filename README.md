@@ -1,4 +1,4 @@
-# Welcome to the OPS245 OER Repository
+# Welcome to the OPS245 OER Repository - CentOS Version
 
 ## Introduction
 

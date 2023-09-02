@@ -5,10 +5,10 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'OPS245 - Open Systems Server',
+  title: 'OPS245 - Open Systems Server (CentOS)',
   tagline: 'OPS245',
   url: 'https://Seneca-ICTOER.github.io/',
-  baseUrl: '/OPS245/',
+  baseUrl: '/OPS245-C7/',
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -17,7 +17,7 @@ module.exports = {
   projectName: 'OPS245',
   themeConfig: {
     navbar: {
-      title: 'OPS245 - Open Systems Server',
+      title: 'OPS245 - Open Systems Server (CentOS)',
       logo: {
         alt: 'Seneca College',
         src: 'img/logo.svg',
@@ -31,7 +31,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'OPS245 - Open Systems Server',
+          title: 'OPS245 - Open Systems Server (CentOS)',
           items: [
             {
               label: 'Contents',
@@ -57,7 +57,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/Seneca-ICTOER/OPS245/tree/main',
+          editUrl: 'https://github.com/Seneca-ICTOER/OPS245-C7/tree/main',
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
