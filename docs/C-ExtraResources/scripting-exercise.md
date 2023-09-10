@@ -61,11 +61,58 @@ A shell script is nothing more than a sequence of shell commands. Any command yo
 
 ## Exercises
 
-You can do these exercises in any order, and change them in any way you like.
+Make sure you are in your home directory on c7host, and clone the github repo that contains templates for all thePython scripts you need this semester (including the sample hello.bash and hello.py below).
 
-  - Create a bash script that will print Hello, then list the contents of the / directory, then print Good Bye.
+```
+git clone https://github.com/ops245/python
+```
 
-       - Create a python script that does the same thing.
+These are a suggested order. You can do these exercises in any order, and change them in any way you like.
+
+### Bash
+Open the file hello.bash from the GitHub repository you cloned. Edit it as follows, changing your name and the date appropriately.
+```
+#!/bin/bash
+# Author: Jason Carman
+# Date: January 10, 2023
+# Purpose: Print hello, list the contents of /, then print goodbye
+# Usage: ./hello.bash
+
+# Print hello on the screen
+echo "Hello"
+
+# List the contents of /
+ls /
+
+
+# Print good bye on the screen
+echo "Good Bye"
+```
+
+### Python
+Now you are going to write the exact same script, but in Python. Open hello.py from the GitHub repository you cloned. Edit is as follows, changing your name and the date appropriately.
+```
+#!/usr/bin/env python3
+# Author: Jason Carman
+# Date: January 10, 2023
+# Purpose: Print hello, list the contents of /, print good bye
+# Usage ./hello.py
+#
+
+# Import the os module
+import os
+
+# Print hello
+print("Hello")
+
+# List the contents of the bin directory
+os.system("ls /")
+
+# Print Good Bye
+print("Good Bye")
+```
+
+You may complete any of the following for additional practice:
 
   - Create a bash script that will run your other script twice.
 
