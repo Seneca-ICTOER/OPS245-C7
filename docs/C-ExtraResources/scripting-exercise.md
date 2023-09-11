@@ -71,7 +71,7 @@ These are a suggested order. You can do these exercises in any order, and change
 
 ### Bash
 Open the file hello.bash from the GitHub repository you cloned. Edit it as follows, changing your name and the date appropriately.
-```
+```bash
 #!/bin/bash
 # Author: Jason Carman
 # Date: January 10, 2023
@@ -91,7 +91,7 @@ echo "Good Bye"
 
 ### Python
 Now you are going to write the exact same script, but in Python. Open hello.py from the GitHub repository you cloned. Edit is as follows, changing your name and the date appropriately.
-```
+```python
 #!/usr/bin/env python3
 # Author: Jason Carman
 # Date: January 10, 2023
