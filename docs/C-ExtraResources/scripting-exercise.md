@@ -84,7 +84,6 @@ echo "Hello"
 # List the contents of /
 ls /
 
-
 # Print good bye on the screen
 echo "Good Bye"
 ```
