@@ -584,17 +584,18 @@ If the user submits an invalid VM name (not centos1, centos2 or centos3) we shou
 ### Else, we are doing a full backup (all 3 VMs)
 Use the below sample to backup centos1. Test to see if it works, then modify it for centos2 and centos3.
 ```python
-  print("Backing up centos1")
-  
-  os.system("virsh dumpxml centos1 > /home/jmcarman/backups/centos1.xml")
-  
-  os.system("gzip < /var/lib/libvirt/images/centos1.qcow2 > /home/jmcarman/backups/centos1.qcow2.gz")
+  else:
+    print("Backing up centos1")
+    
+    os.system("virsh dumpxml centos1 > /home/jmcarman/backups/centos1.xml")
+    
+    os.system("gzip < /var/lib/libvirt/images/centos1.qcow2 > /home/jmcarman/backups/centos1.qcow2.gz")
 ```
 
 ### Exit with success
 Finally, we should exit successfully. This isn't technically necessary, but is a good practice.
 ```python
-  sys.exit()
+sys.exit()
 ```
 
 ## Lab 2 Sign-Off (Show Instructor)
