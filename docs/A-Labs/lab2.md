@@ -500,98 +500,102 @@ If the Virtual machine fails to shutdown from the `virsh shutdown` command, then
 
 ## Investigation 4: Using Python To Automate Managing Virtual Machines
 
-This week you have added some significant capabilities to your python scripting. The ability to run loops and make decisions makes your scripts much more powerful. In this investigation you will write a python script that backs up the centos1, centos2, and centos3 VMs, or lets the user specify which VMs they want backed up.
+In Lab 2 Investigation 3 you performed a manual backup of all 3 virtual machines. While this is something both
+important and necessary, it's a tedious process. This is something you could automate through scripting. In this
+exercise you are going to write a script that will backup all three of your virtual machines. We will improve on this
+backup script in a later exercise. To begin, open the script ```backupVM.py``` (that you imported using git clone in
+Week 2) in your text editor (vi) on c7host. Be sure to modify Author and Date with the correct information.
 
 **Please take a look at these [Python Scripting Tips](/C-ExtraResources/python-scripting-tips.md) before continuing with the steps below**
 
-  1. In your **bin** directory, create the file **backupVM.py**, and populate with our standard beginning
+The below instructions provide all (or most) of the required code for filling in the above template. Fill in each
+section in sequence under the appropriate comment block.
+
+### Importing the required modules
+For this script we will require the following modules:
+- os
+- sys
+- subprocess
+
+Using the import statement (like you have done previously), import the above modules on one line.
+```python
+import os, sys, subprocess
+```
+### Obtain the current user's username from the Operating System
+We will use this to indicate an error if the script is not being run as root (without sudo). Create a variable called "whoami" and store the output of the whoami command in it. We will use the  subprocess module, with the check_output function to accomplish this task.
 
 ```python
-#!/usr/bin/env python3
-# backupVM.py
-# Purpose: Backs up virtual machines
-#
-# USAGE: ./backupVM.py
-#
-# Author: *** INSERT YOUR NAME ***
-# Date: *** CURRENT DATE ***
-import os
-currentuser = os.popen('whoami')
-if currentuser.read() != 'root':
-  print("You must be root")
-  exit()
+whoami = subprocess.check_output("whoami").decode("utf-8")
+```
+
+### Obtain the current user's user ID (UID) from the operating system
+We will use the os.geteuid() function for this task. Linux UID's (User IDs) start at 1000 for users. Root has a UID
+of 0.
+
+```python
+currentuser = os.geteuid()
+```
+
+### Check if the current user is root
+Now that we have the information about the current user and their UID stored in variables, we can check to see if the user is root using an if/else block. If the user is not root, we will print an error (indicating they are not root and who they are currently logged in as) and exit with an error. You can use the "sys.exit()" function to display an error and exit. If no content is provided with sys.exit, the script will exit with a 0 status code. If content is provided it will display that error on the screen and exit with a 1 status code. Remember that Linux uses 0 status codes to indicate success and any non-zero value to indicate failure.
+
+```python
+if currentuser != 0:
+
+  print("You are currently logged in as:",whoami)
+
+  sys.exit("You must be root")
+```
+
+We can use an else statement to continue, since the above checks to see if the user is not root. If the above condition is not met, the current user's UID is 0 and they are root. We can then prompt if they want to backup all VMs or not. If the answer is no, prompt again asking which VM they wish to backup.
+
+```python
 else:
-  print('Backing up centos1')
-  os.system('gzip < /var/lib/libvirt/images/centos1.qcow2 > ~YourRegularUsername/backups/centos1.qcow2.gz')
-  print('Backing up centos2')
-  os.system('gzip < /var/lib/libvirt/images/centos2.qcow2 > ~YourRegularUsername/backups/centos2.qcow2.gz')
-  print('Backing up centos3')
-  os.system('gzip < /var/lib/libvirt/images/centos3.qcow2 > ~YourRegularUsername/backups/centos3.qcow2.gz')
+  backupAll=input("Do you wish to backup all VMs? (y | n) ")
 ```
 
-  2. Try to run that script. You'll notice it does not work. No matter what you do, it always says you are not root.
-  3. Modify the print statement that tells the user they must be root to also include the current username, then run the program again.
-  4. It should print out root, but with an extra new-line. You may have noticed this in your other python scripts so far: the data we get from os.popen() has an extra new-line on the end. We will need to modify the string(s) it gives us a bit. See the side-bar for hints on how to do so.
-  5. Modify the if statement so it is just getting the current username, not the username and a newline. You can do this using several steps and several variables, but it can also be done in a single line.
-  6. Test your script to make sure it works. If it doesn't, go back and fix it. **Do not continue until it successfully makes backups of your VMs**.
-  7. There is a weakness to this script as written. Every time you run it, it will make a backup of all three VMs. But what if you only made a change to one of them? Do we really need to wait through a full backup cycle for two machines that didn't change? As the script is currently written, we do. But we can make it better. We've provided the scripts with some comments below.
-
-  8. 
-
+### Ask the user which VM they wish to backup and perform the backup
+If the user selected no above, we need to know what VM they wish to backup. We will prompt again and use a nested if statement to check their response. Then, perform the desired backup. Be sure to replace the destination with your home directory.
 ```python
-#!/usr/bin/env python3
-# backupVM.py
-# Purpose: Backs up virtual machines
-#
-# USAGE: ./backupVM.py
-#
-# Author: *** INSERT YOUR NAME ***
-# Date: *** CURRENT DATE ***
-import os
+  if backupAll == "n":
+    
+    backupVM=input("What VM do you wish to backup? ")
+    
+    if backupVM == "centos1":
 
-#Make sure script is being run with elevated permissions
-currentuser = os.popen('whoami').read().strip()
-if currentuser != 'root':
-  print("You must be root")
-  exit()
-else
+      print("Backing up centos1")
+    
+      os.system("virsh dumpxml centos1 > /home/jmcarman/backups/centos1.xml")
+    
+      os.system("gzip < /var/lib/libvirt/images/centos1.qcow2 > /home/jmcarman/backups/centos1.qcow2.gz")
+  
+    elif backupVM == "centos2":
 
-#The rest of this script identifies steps with comments 'Step <something>'.
-#This is not a normal standard for commenting, it has been done here to link the script
-# to the instructions on the wiki.
-
-#Step A: Find out if user wants to back up all VMs
-#Step B-1:use the existing loop to back up all the VMs
-  print('Backing up centos1')
-  os.system('gzip < /var/lib/libvirt/images/centos1.qcow2 > ~YourRegularUsername/backups/centos1.qcow2.gz')
-  print('Backing up centos2')
-  os.system('gzip < /var/lib/libvirt/images/centos2.qcow2 > ~YourRegularUsername/backups/centos2.qcow2.gz')
-  print('Backing up centos3')
-  os.system('gzip < /var/lib/libvirt/images/centos3.qcow2 > ~YourRegularUsername/backups/centos3.qcow2.gz')
-#Step B-2: They don't want to back up all VMs, prompt them for which VM they want to back up
-#Step C: Prompt the user for the name of the VM they want to back up
-#Step C-1: If the user chose Centos1, back up that machine.
-#Step C-2: If the user chose Centos2, back up that machine.
-#Step C-3: If the user chose Centos3, back up that machine.
+        # TO DO : Repeat the above steps, replace centos1 with centos2
 ```
 
-  9. Before the block that backs up each machine add a prompt to ask the user if they want to back up all machines. Use an if statement to check if they said yes (See comment 'Step A').
+### Error checking
+If the user submits an invalid VM name (not centos1, centos2 or centos3) we should generate an error and exit.
+```python
+    else:
+      
+      sys.exit("Invalid choice, your VM options are centos1, centos2, centos3")
+```
+### Else, we are doing a full backup (all 3 VMs)
+Use the below sample to backup centos1. Test to see if it works, then modify it for centos2 and centos3.
+```python
+  print("Backing up centos1")
+  
+  os.system("virsh dumpxml centos1 > /home/jmcarman/backups/centos1.xml")
+  
+  os.system("gzip < /var/lib/libvirt/images/centos1.qcow2 > /home/jmcarman/backups/centos1.qcow2.gz")
+```
 
-        - if they did say yes, back up all the VMs using your existing block (Comment step B-1).
-        - If they didn't say yes, do nothing for now (you could even use python's pass statement).
-
-  10. Test your script to make sure it works. Check what happens if you say 'yes' to the prompt, and check what happens if you say things other than 'yes'.
-  11. Now we have a script that asks the user if they want to back up all VMS, and if they say they do, it does. But if they don't want to back up every VM, it currently does nothing.
-  12. Add an else statement at comment Step B-2 to handle the user not wanting to back up every VM. Inside that else clause (Comment step C) ask the user which VM they would like to back up (you can even give them the names of available VMs (Centos1, Centos2, Centos3).
-  13. Now nest an if statement inside that else (Comments C-1, C-2, and C-3) so that your script can handle what your user just responded with. If they asked for Centos1, back up Centos1. If they want to back up Centos2, only back up Centos2, etc. Hint: You might want to use elif for this.
-  14. Test your script again. You should now have a script that:
-
-         - Makes sure the user is running the script with elevated permissions.
-         - Asks the user if they want to back up every VM.
-         - If they want to back up every VM, it backs up every VM.
-         - If the user does not want to back up every VM, the script asks them which VM they do want to back up.
-         - If the user selected a single VM, the script will back up that one VM.
-         - Now you may notice another issue with the script: The gzip lines are almost identical. The only difference in them is the name of the VM file being backed up. In the portion of code where you back up each machine individually (comment steps C-1, C-2, and C-3) try replacing the machine name in the gzip command with a string variable that holds the machine's name instead. Note that you will have to make us of string concatenation for this to work correctly.
+### Exit with success
+Finally, we should exit successfully. This isn't technically necessary, but is a good practice.
+```python
+  sys.exit()
+```
 
 ## Lab 2 Sign-Off (Show Instructor)
 
