@@ -122,7 +122,7 @@ On your **centos3** vm issue the following command to download the check script.
 git clone https://github.com/OPS245/a2-check
 ```
 
-Give the script execute permission and run it.
+Give the **marka2.bash** script execute permission and run it.
 
 Upload the following to the Assignment 2 folder on blackboard:
 - Output from the Assignment 2 check script (a2output.txt)
